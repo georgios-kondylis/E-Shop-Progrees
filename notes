@@ -1,0 +1,16 @@
+1. inline-block. Shrinks to Fit Content:
+By changing display to inline-block, the element's width and height
+now only expand to fit the content inside,
+rather than taking up the full width of the container.
+Unlike block elements (which take up the full width of the parent), 
+inline-block elements only take up as much space as their content needs.
+Before, the h6 might have been a block-level element (the default behavior for headings),
+which made it take up the full width of its parent container, 
+regardless of how much text was inside.
+
+2. Effect of Padding on Size:
+The padding (9px 8px 6px 8px) you've added affects the size of the 
+element by adding space inside the element. However, 
+since the element is now inline-block, this padding doesn’t make 
+the element grow significantly 
+it's confined to the size of the text content plus the padding.
