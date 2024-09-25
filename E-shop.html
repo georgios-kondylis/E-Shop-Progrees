@@ -24,13 +24,31 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="About_us.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="bag_icon"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <div class="shoppingBasket">  
+                    <li class="bag_icon">
+                        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                        <span class="quantity">0</span>
+                    </li>
+                </div> 
                 <a href="#" class="close" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
             </ul>
         </div>
 
+        <div class="cart-side">
+            <div class="top-row">
+                <div class="close-cart"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <h3>Your Cart</h3>
+            </div> 
+            <ul class="productList"></ul>
+            <div class="checkout">
+                <div class="total">(0 items) 0 €</div>
+                <div class="purchase">Purchase</div>
+            </div>
+        </div>
+
         <div class="mobile" id="mobile">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <span class="quantity">0</span>
             <i class="bar fas fa-outdent" id="bar"></i>
         </div>
     </section>
@@ -78,8 +96,10 @@
     <section class="product1 section-p1" id="product1">
         <h2>Featured Products</h2>
         <p>Summer Collection New Modern Design</p>
+
         <div class="pro-container">
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="1">
                 <img src="img/Products/f1.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -93,10 +113,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="2">
                 <img src="img/Products/f2.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -110,10 +130,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="3">
                 <img src="img/Products/f3.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -127,10 +147,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="4">
                 <img src="img/Products/f4.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -144,10 +164,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="5">
                 <img src="img/Products/f5.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -161,10 +181,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="6">
                 <img src="img/Products/f6.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -178,10 +198,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="7">
                 <img src="img/Products/f7.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -195,10 +215,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
         
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true" data-id="8">
                 <img src="img/Products/f8.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -212,7 +232,7 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
         </div>
     </section>
@@ -227,7 +247,7 @@
         <h2>New Arrivals</h2>
         <p>Summer Collection New Modern Design</p>
         <div class="pro-container">
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="9">
                 <img src="img/Products/n1.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -241,10 +261,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="10">
                 <img src="img/Products/n2.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -258,10 +278,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="11">
                 <img src="img/Products/n3.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -275,10 +295,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="12">
                 <img src="img/Products/n4.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -292,10 +312,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="13">
                 <img src="img/Products/n5.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -309,10 +329,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="14">
                 <img src="img/Products/n6.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -326,10 +346,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
 
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="15">
                 <img src="img/Products/n7.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -343,10 +363,10 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
         
-            <div class="pro" data-tilt data-tilt-reverse="true">
+            <div class="pro" data-tilt data-tilt-reverse="true"  data-id="16">
                 <img src="img/Products/n8.jpg" alt="">
                 <div class="des">
                     <span>Adidas</span>
@@ -360,7 +380,7 @@
                     </div>
                     <h4>€78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping cart"></i></a>
             </div>
         </div>
     </section>
